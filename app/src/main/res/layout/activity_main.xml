@@ -211,7 +211,8 @@
             android:textSize="@dimen/smallTextSize"
             tools:ignore="ButtonStyle,UnusedAttribute"
             android:layout_margin="@dimen/smallPadding"
-            android:background="@color/colorPrimary"/>
+            android:background="@color/colorPrimary"
+            android:padding="@dimen/defaultPadding"/>
 
     </LinearLayout>
 

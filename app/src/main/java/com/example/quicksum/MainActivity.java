@@ -32,7 +32,6 @@ public class MainActivity extends AppCompatActivity {
     private Button clear;
     private Button undo;
     private Button other;
-    private Button color;
 
     private SharedPreferences preferences;
     private int theme;
@@ -58,7 +57,6 @@ public class MainActivity extends AppCompatActivity {
         clear = findViewById(R.id.clearButton);
         undo = findViewById(R.id.undoButton);
         other = findViewById(R.id.otherButton);
-        color = findViewById(R.id.colourChange);
 
         mainLayout = findViewById(R.id.mainLayout);
         numDisplay.setText(String.format("%d",0));
@@ -320,6 +318,7 @@ public class MainActivity extends AppCompatActivity {
 
     protected void onStop(){
         super.onStop();
+
 
     }
     protected void onDestroy(){
