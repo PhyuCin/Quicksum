@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#333333</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#FFFFFF</color>
+
+    <color name="defaultButton1">#dd556b</color>
+    <color name="defaultButton2">#a22a3c</color>
+    <color name="defaultBackground">#f9d5e5</color>
+
+    <color name="galaxyButton1">#cc00cc</color>
+    <color name="galaxyButton2">#8600b3</color>
+    <color name="galaxyBackground">#000761</color>
+
+    <color name="neutralButton1">#c68c53</color>
+    <color name="neutralButton2">#6b5e5b</color>
+    <color name="neutralBackground">#d9c2b3</color>
+
+    <color name="modernButton1">#395099</color>
+    <color name="modernButton2">#2e2e33</color>
+    <color name="modernBackground">#d4d4d1</color>
+
+    <color name="sunButton1">#e69d00</color>
+    <color name="sunButton2">#c63900</color>
+    <color name="sunBackground">#ffffb3</color>
+
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+
+
+</resources>

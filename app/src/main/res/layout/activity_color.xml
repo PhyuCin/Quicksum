@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/defaultBackground"
+    android:orientation="vertical"
+    android:padding="@dimen/defaultPadding"
+    tools:context=".ColorActivity"
+    android:id="@+id/colorLayout">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/smallPadding"
+        android:orientation="vertical"
+        android:background="@color/white">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/coloursTitle"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <!--default colors-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/smallPadding">
+
+            <View
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@color/defaultButton1" />
+
+            <View
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@color/defaultButton2" />
+
+            <View
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@color/defaultBackground" />
+
+            <View
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@color/white" />
+
+            <Button
+                android:id="@+id/toDefault"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:onClick="changeToDefault"
+                android:text="@string/defaultColorButtonText"
+                android:textColor="@color/white"
+                android:textSize="@dimen/smallTextSize"
+                app:backgroundTint="@color/defaultButton2"
+                tools:ignore="ButtonStyle,UnusedAttribute" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/smallPadding">
+
+            <View
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@color/galaxyButton1" />
+
+            <View
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@color/galaxyButton2" />
+
+            <View
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@color/galaxyBackground" />
+
+            <View
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@color/white" />
+
+            <Button
+                android:id="@+id/toGalaxy"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:onClick="changeToGalaxy"
+                android:text="@string/galaxyColorButtonText"
+                android:textColor="@color/white"
+                android:textSize="@dimen/smallTextSize"
+                app:backgroundTint="@color/galaxyButton1"
+                tools:ignore="ButtonStyle,UnusedAttribute" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/smallPadding">
+
+            <View
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@color/neutralButton1" />
+
+            <View
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@color/neutralButton2" />
+
+            <View
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@color/neutralBackground" />
+
+            <View
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@color/white" />
+
+            <Button
+                android:id="@+id/toNeutral"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:onClick="changeToNeutral"
+                android:text="@string/neutralColorButtonText"
+                android:textColor="@color/white"
+                android:textSize="@dimen/smallTextSize"
+                app:backgroundTint="@color/neutralButton1"
+                tools:ignore="ButtonStyle,UnusedAttribute" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/smallPadding">
+
+            <View
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@color/modernButton1" />
+
+            <View
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@color/modernButton2" />
+
+            <View
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@color/modernBackground" />
+
+            <View
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@color/white" />
+
+            <Button
+                android:id="@+id/toModern"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:onClick="changeToModern"
+                android:text="@string/modernColorButtonText"
+                android:textColor="@color/white"
+                android:textSize="@dimen/smallTextSize"
+                app:backgroundTint="@color/modernButton1"
+                tools:ignore="ButtonStyle,UnusedAttribute" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/smallPadding">
+
+            <View
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@color/sunButton1" />
+
+            <View
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@color/sunButton2" />
+
+            <View
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@color/sunBackground" />
+
+            <View
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@color/white" />
+
+            <Button
+                android:id="@+id/toSun"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:onClick="changeToSun"
+                android:text="@string/sunColorButtonText"
+                android:textColor="@color/white"
+                android:textSize="@dimen/smallTextSize"
+                app:backgroundTint="@color/sunButton1"
+                tools:ignore="ButtonStyle,UnusedAttribute" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/toMain"
+            android:layout_width="150dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:onClick="goBackToMain"
+            android:text="@string/toMainButtonText"
+            android:textColor="@color/white"
+            android:textSize="@dimen/smallTextSize"
+            app:backgroundTint="@color/black"
+            tools:ignore="ButtonStyle,UnusedAttribute" />
+    </LinearLayout>
+
+
+
+</LinearLayout>

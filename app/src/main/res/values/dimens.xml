@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="displayTextSize">45sp</dimen>
+    <dimen name="numTextSize">25sp</dimen>
+    <dimen name="normalTextSize">15sp</dimen>
+    <dimen name="smallTextSize">12sp</dimen>
+
+    <dimen name="numPadding">23sp</dimen>
+    <dimen name="defaultPadding">18sp</dimen>
+    <dimen name="smallPadding">5sp</dimen>
+</resources>

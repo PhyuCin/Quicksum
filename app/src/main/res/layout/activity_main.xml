@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/defaultBackground"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/defaultPadding"
+    tools:context=".MainActivity"
+    >
+
+    <!--display the number-->
+    <TextView
+        android:id="@+id/numDisplay"
+        android:layout_width="285sp"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="end"
+        android:padding="@dimen/defaultPadding"
+        android:textColor="@color/black"
+        android:textSize="@dimen/displayTextSize"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <!--for the buttons-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/smallPadding">
+
+        <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/numLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:columnCount="3"
+            android:orientation="horizontal"
+            android:rowCount="4"
+            tools:context=".GridLayoutActivity">
+
+            <!--first row-->
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="add1"
+                android:padding="@dimen/numPadding"
+                android:text="@string/one"
+                android:textColor="@color/white"
+                android:textSize="@dimen/numTextSize"
+                tools:ignore="ButtonStyle,UnusedAttribute"
+                android:layout_margin="@dimen/smallPadding"/>
+
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="add2"
+                android:padding="@dimen/numPadding"
+                android:text="@string/two"
+                android:textColor="@color/white"
+                android:textSize="@dimen/numTextSize"
+                tools:ignore="ButtonStyle,UnusedAttribute"
+                android:layout_margin="@dimen/smallPadding"/>
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="add3"
+                android:padding="@dimen/numPadding"
+                android:text="@string/three"
+                android:textColor="@color/white"
+                android:textSize="@dimen/numTextSize"
+                tools:ignore="ButtonStyle,UnusedAttribute"
+                android:layout_margin="@dimen/smallPadding"/>
+
+            <!--second row-->
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="add4"
+                android:padding="@dimen/numPadding"
+                android:text="@string/four"
+                android:textColor="@color/white"
+                android:textSize="@dimen/numTextSize"
+                tools:ignore="ButtonStyle,UnusedAttribute"
+                android:layout_margin="@dimen/smallPadding"/>
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="add5"
+                android:padding="@dimen/numPadding"
+                android:text="@string/five"
+                android:textColor="@color/white"
+                android:textSize="@dimen/numTextSize"
+                tools:ignore="ButtonStyle,UnusedAttribute"
+                android:layout_margin="@dimen/smallPadding"/>
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="add6"
+                android:padding="@dimen/numPadding"
+                android:text="@string/six"
+                android:textColor="@color/white"
+                android:textSize="@dimen/numTextSize"
+                tools:ignore="ButtonStyle,UnusedAttribute"
+                android:layout_margin="@dimen/smallPadding"/>
+
+            <!--third row-->
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="add7"
+                android:padding="@dimen/numPadding"
+                android:text="@string/seven"
+                android:textColor="@color/white"
+                android:textSize="@dimen/numTextSize"
+                tools:ignore="ButtonStyle,UnusedAttribute"
+                android:layout_margin="@dimen/smallPadding"/>
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="add8"
+                android:padding="@dimen/numPadding"
+                android:text="@string/eight"
+                android:textColor="@color/white"
+                android:textSize="@dimen/numTextSize"
+                tools:ignore="ButtonStyle,UnusedAttribute"
+                android:layout_margin="@dimen/smallPadding"/>
+
+            <Button
+                android:id="@+id/button9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="add9"
+                android:padding="@dimen/numPadding"
+                android:text="@string/nine"
+                android:textColor="@color/white"
+                android:textSize="@dimen/numTextSize"
+                tools:ignore="ButtonStyle,UnusedAttribute"
+                android:layout_margin="@dimen/smallPadding"/>
+
+            <!--clear, undo and other buttons-->
+            <Button
+                android:id="@+id/clearButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="clear"
+                android:padding="@dimen/defaultPadding"
+                android:text="@string/clearButtonText"
+                android:textColor="@color/white"
+                android:textSize="@dimen/normalTextSize"
+                tools:ignore="ButtonStyle,UnusedAttribute"
+                android:layout_margin="@dimen/smallPadding"
+                android:background="@color/defaultButton2"/>
+
+            <Button
+                android:id="@+id/undoButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="undo"
+                android:padding="@dimen/defaultPadding"
+                android:text="@string/undoButtonText"
+                android:textColor="@color/white"
+                android:textSize="@dimen/normalTextSize"
+                tools:ignore="ButtonStyle,UnusedAttribute"
+                android:layout_margin="@dimen/smallPadding"
+                android:background="@color/defaultButton2"/>
+
+            <Button
+                android:id="@+id/otherButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="other"
+                android:padding="@dimen/defaultPadding"
+                android:text="@string/otherButtonText"
+                android:textColor="@color/white"
+                android:textSize="@dimen/normalTextSize"
+                tools:ignore="ButtonStyle,UnusedAttribute"
+                android:layout_margin="@dimen/smallPadding"
+                android:background="@color/defaultButton2"/>
+
+        </GridLayout>
+
+        <Button
+            android:id="@+id/colourChange"
+            android:layout_width="90sp"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:onClick="goToColorSettings"
+            android:text="@string/coloursButtonText"
+            android:textColor="@color/white"
+            android:textSize="@dimen/smallTextSize"
+            tools:ignore="ButtonStyle,UnusedAttribute"
+            android:layout_margin="@dimen/smallPadding"
+            android:background="@color/colorPrimary"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
